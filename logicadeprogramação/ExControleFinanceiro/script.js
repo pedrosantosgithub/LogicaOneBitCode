@@ -12,7 +12,8 @@ do{
     dinheiroAtual = Number(dinheiroAtual) + Number(adicionar)
     break
     case "b": remover = prompt('Quanto dinheiro deseja remover?')
-    dinheiroAtual = Number(dinheiroAtual) - Number(remover)
+    if(remover > dinheiroAtual){alert('[ERROR] - Você não consegue tirar um dinheiro que você não possui!')}
+    else{dinheiroAtual = Number(dinheiroAtual) - Number(remover)}
     break
     case "c": prompt('Encerrando o programa...')
     break

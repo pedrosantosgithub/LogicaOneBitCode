@@ -1,8 +1,7 @@
+let numeroTabuada = parseInt(prompt('Escolha um numero entre 1 a 20'))
 
-let numeroTabuada = prompt('Escolha um numero de 1 a 20')
-
-do{numeroTabuada = prompt('Escolha numeros apenas 1 a 20')}
-while(numeroTabuada >=20)
-
-for(alert(`Vamos inicializar a tabuada do numero ${numeroTabuada}`))
-{}
+while(numeroTabuada >=21){
+  alert(numeroTabuada = parseInt(prompt('Escolha um numero APENAS entre 1 a 20')))}
+for(let i = 0; i <= 10; i++){
+  alert(`${numeroTabuada} * ${i} = ${numeroTabuada * i}`)
+}

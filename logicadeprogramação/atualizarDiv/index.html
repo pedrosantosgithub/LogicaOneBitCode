@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <style>
+    *{
+      padding: 0px;
+      margin: 0px;
+      box-sizing: border-box;
+    }
+    body{
+      text-align: center;
+    }
+    a {
+      font-size: 2.0em;
+      padding-top: 30px;
+      padding: 5px;
+      font-family: Arial, Helvetica, sans-serif;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <a href="#" id="carregarDiv1">Opção 01</a>
+  <a href="#" id="carregarDiv2">Opção 02</a>
+  <div id="Texto"></div>
+  <script>
+(function() {
+  // Declaração da variável httpRequest para fazer requisições AJAX
+  var httpRequest;
+  document.getElementById("carregarDiv1").onclick = function() { makeRequest('div1.html'); };
+
+  document.getElementById("carregarDiv2").onclick = function() { makeRequest('div2.html'); };
+
+  // Função que faz a requisição AJAX para carregar o conteúdo da página especificada por 'url'
+  function makeRequest(url) {
+    // Verifica o tipo de objeto XMLHttpRequest suportado pelo navegador
+    if (window.XMLHttpRequest) { 
+      httpRequest = new XMLHttpRequest();
+    } else if (window.ActiveXObject) {
+      try {
+        httpRequest = new ActiveXObject("Msxml2.XMLHTTP");
+      } catch (e) {
+        try {
+          httpRequest = new ActiveXObject("Microsoft.XMLHTTP");
+        } catch (e) {}
+      }
+    }
+
+    if (!httpRequest) {
+      alert('Não foi possível criar uma instância de XMLHttpRequest');
+      return false;
+    }
+
+    // Define a função de callback para lidar com a resposta da requisição
+    httpRequest.onreadystatechange = alertContents;
+
+    // Abre uma requisição GET para a URL especificada
+    httpRequest.open('GET', url);
+
+    // Envia a requisição
+    httpRequest.send();
+  }
+
+  // Função de callback que é chamada quando o estado da requisição muda
+  function alertContents() {
+    // Verifica se o estado da requisição é 4 
+    if (httpRequest.readyState === 4) {
+      // Se o status da resposta for 200 (OK), atualiza o conteúdo da div com ID "Texto"
+      if (httpRequest.status === 200) {
+        document.getElementById('Texto').innerHTML = httpRequest.responseText;
+      } else {
+        alert('Houve um problema com a requisição.');
+      }
+    }
+  }
+})();
+
+  </script>
+</body>
+</html>

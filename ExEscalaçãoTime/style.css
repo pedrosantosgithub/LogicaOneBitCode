@@ -1,0 +1,44 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: #333333;
+}
+h1{
+  margin: 5px;
+  text-align: center;
+  color: white;
+}
+
+#container {
+  display: flex;
+  justify-content: center; /* Centralizar horizontalmente */
+  align-items: center; /* Centralizar verticalmente */
+  height: 65vh; /* Para ocupar a altura total da janela */
+
+}
+
+#campoFutebol {
+  background-image: url(imagens/52d83df5468eb7131eaac24754e65ce5.jpg);
+  background-size: 100% 100%;
+  width: 250px;
+  height: 350px;
+
+}
+
+div#buttons{
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+}
+div#inputJogador{
+  display: flex;
+  justify-content: space-around;
+  margin: 5px;
+}
+select{
+  width: 100px;
+  display: flex;
+}

@@ -39,16 +39,17 @@ header > menu#options {
   width: 100vw;
 }
 
-header > menu#options > h3 {
+header > menu#options > div#choices > h3 {
   font-family: 'Estadio';
   color: white;
-  display: flex;
   align-items: center;
 }
 
 header > menu#options > div#choices {
   color: white;
   font-family: 'TituloH3';
+  display: flex;
+  padding: 0px 5px 0px 5px;
   text-decoration: none;
 }
 
@@ -124,6 +125,8 @@ div#optionsTeam > a:hover{
   text-decoration: underline #dc2165 3px;
   
 }
+
+
 body > div > div#team {
   width: 500px;
   height: 346px;
@@ -153,7 +156,7 @@ body > div > div#players {
 body > div > div#players {
   width: 400px;
   height: 604px;
-  display: flex;
+  display: block;
   margin: -604px 504px 500px ;
   background: linear-gradient(#3d4551, #323436) ;
   border: 1px solid white;
@@ -166,6 +169,23 @@ body > div > div#players > h3 {
   font-weight: bolder;
   width: 100%;
 }
+body > div > div#players > button {
+  display: block;
+  margin: 545px 0px 0px 340px;
+  width: 50px;
+  height: 30px;
+  background: none;
+  border: none;
+  color: white;
+  font-family: 'TituloH3';
+}
+body > div > div#players > button:hover {
+  color: #cef560;
+  padding: 1px;
+  font-size: 15px;
+  text-decoration: underline #dc2165 3px;
+}
+
 
 
 body > div > div#reservePlayers {

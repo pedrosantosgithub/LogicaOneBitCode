@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>E s c a l e</title>
   <link rel="stylesheet" href="estilos/style.css">
+  <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet">
 </head>
 <body>
   <header>
@@ -23,13 +24,19 @@
 
   <div id="escalacao">
     <div id="optionsTeam">
-      <a href="#">Time atual</a>
+
+      <div class="select-menu">
+        <div class="select-btn">
+          <span class="sBtn-text" onclick="openModal()">
+            Escolha o time
+          </span>
+        </div>
+      </div>
       <a href="#">Escalacao</a>
       <a href="#">Taticas</a>
     </div>
     <div id="team">     
     </div>
-
     <div id="reservePlayers">
       <h3>Jogadores reservas</h3>
     </div>  
@@ -38,6 +45,20 @@
       <h3>time</h3>
       <button>Limpar</button>
     </div>
+  </div>
+
+
+  <div class="modal-container">
+      <div class="modal">
+        <h3 style="color: black">Escolha um time</h3>
+        <hr>
+        <ul class="options">
+        <li class="option">TIME</li>
+        </ul>
+        <div class="btns">
+          <button class="Close" onclick="closeModal()">Fechar</button>
+        </div>
+      </div>
   </div>
 
 

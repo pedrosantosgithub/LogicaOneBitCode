@@ -2,8 +2,10 @@ function resetModalContent() {
   const modal = document.querySelector('.modal-container');
   const modalContent = modal.querySelector('.modal');
 
-  // Remova todo o conteúdo dentro do modal
+  // Remova todo o conteúdo dentro do modal, exceto o botão "Fechar"
+  const closeButton = modalContent.querySelector('.Close');
   modalContent.innerHTML = '';
+  modalContent.appendChild(closeButton);
 }
 
 function createH3Element(text) {
@@ -46,8 +48,10 @@ function closeModal() {
   const modal = document.querySelector('.modal-container');
   const modalContent = modal.querySelector('.modal');
 
-  // Remova todo o conteúdo dentro do modal
+  // Remova todo o conteúdo dentro do modal, exceto o botão "Fechar"
+  const closeButton = modalContent.querySelector('.Close');
   modalContent.innerHTML = '';
+  modalContent.appendChild(closeButton);
 
   modal.classList.remove('active');
 }

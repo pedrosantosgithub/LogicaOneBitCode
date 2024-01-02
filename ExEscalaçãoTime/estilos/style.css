@@ -16,16 +16,16 @@
 /* Faces de fontes */
 @font-face {
   font-family: 'Estadio';
-  src: url(EA\ Logo.ttf);
+  src: url(fontes/EA\ Logo.ttf);
 }
 @font-face {
   font-family: 'TituloH3';
-  src: url(EASPORTS15.ttf);
+  src: url(fontes/EASPORTS15.ttf);
 }
 
 /* Estilos do corpo */
 body {
-  background: url(estadio.jpg);
+  background: url(/ExEscalaçãoTime/estilos/imagens/Estadio.jpg);
   background-repeat: no-repeat;
   background-size: 100vw 100vh;
   width: 100vw;
@@ -131,7 +131,7 @@ body > div > div#team {
   width: 500px;
   height: 346px;
   display: flex;
-  background: url(../imagens/campo.png), linear-gradient(#3d4551, #323436);
+  background: url(../estilos/imagens/campo.png), linear-gradient(#3d4551, #323436);
   border: 1px solid white;
   text-align: center;
   border-radius: 2px;
@@ -146,68 +146,6 @@ body > div > div#team > h3{
   font-weight: bolder;
 }
 
-.modal-container{
-  width: 100vw;
-  position: fixed;
-  top: 30px;
-  display: none;
-  z-index: 999;
-  justify-content: center;
-}
-
-.modal {
-  display: flex;
-  text-align: center;
-  flex-direction: column;
-  padding: 5px;
-  background-color: white;
-  border-radius: 10px;
-  width: 300px;
-}
-
-.active {
-  display: flex;
-}
-
-.active .modal {
-  animation: modal .4s;
-}
-
-@keyframes modal {
-  from {
-    opacity: 0;
-    transform: translate(0, -60px, 0);
-  }
-  to {
-    opacity: 1;
-    transform: translate3d(0, 0, 0);
-  }
-}
-
-.btns {
-  display: flex;
-}
-
-.btns button {
-  font-size: small;
-  border: none;
-  width: 50px;
-  height: 15px;
-  border-radius: 5px;
-  color: white;
-  font-family: 'TituloH3';
-  cursor: pointer;
-  margin-top: 30px;
-}
-
-.select-menu .select-btn{
- font-family:'TituloH3';
- cursor: pointer;
-}
-
-.Close {
-  background-color: red;
-}
 
 .sBtn-text {
   font-family: 'TituloH3';
@@ -234,7 +172,8 @@ body > div > div#team > h3{
 
 .options .option{
   display: flex;
-  color: black;
+  margin: 30px 0px 0px 15px;
+  color: rgb(255, 255, 255);
   font-family: 'TituloH3';
   cursor: pointer;
   align-items: center;

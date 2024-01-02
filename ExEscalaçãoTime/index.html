@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>E s c a l e</title>
   <link rel="stylesheet" href="estilos/style.css">
+  <link rel="stylesheet" href="estilos/modal/modal.css">
   <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet">
 </head>
 <body>
@@ -12,11 +13,11 @@
     <menu id="options"> 
       <div id="choices">
         <h3>E s c a l e</h3>
-        <a href="#">Crie um time</a> 
+        <a href="#" onclick="criarTime()">Crie um time</a> 
       </div>
       <div id="pesquisa">
         <input type="search" name="" id="" placeholder="Pesquisa o jogador...">
-        <img src="imagens/iconsearch.png" alt="">
+        <img src="./estilos/imagens/iconsearch.png" alt="">
       </div>
     </menu>
   </header>
@@ -27,7 +28,7 @@
 
       <div class="select-menu">
         <div class="select-btn">
-          <span class="sBtn-text" onclick="openModal()">
+          <span class="sBtn-text" onclick="escolherTime()">
             Escolha o time
           </span>
         </div>
@@ -42,7 +43,6 @@
     </div>  
 
     <div id="players">
-      <h3>time</h3>
       <button>Limpar</button>
     </div>
   </div>
@@ -50,10 +50,9 @@
 
   <div class="modal-container">
       <div class="modal">
-        <h3 style="color: black">Escolha um time</h3>
         <hr>
-        <ul class="options">
-        <li class="option">TIME</li>
+        <ul>
+
         </ul>
         <div class="btns">
           <button class="Close" onclick="closeModal()">Fechar</button>

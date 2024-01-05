@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>E s c a l e</title>
   <link rel="stylesheet" href="estilos/style.css">
-  <link rel="stylesheet" href="estilos/modal/modal.css">
+  <link rel="stylesheet" href="estilos/modal/modalCriarTime.css">
   <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet">
 </head>
 <body>
@@ -25,17 +25,48 @@
 
   <div id="escalacao">
     <div id="optionsTeam">
-
       <div class="select-menu">
-        <div class="select-btn">
-          <span class="sBtn-text" onclick="escolherTime()">
+          <span class="sBtn-text" onclick="criarTime()">
             Escolha o time
           </span>
-        </div>
       </div>
       <a href="#">Escalacao</a>
       <a href="#">Taticas</a>
     </div>
+
+    <div class="modal-containercriarTime">
+      <div class="modalcriarTime">
+        <div class="criartimeInputs">
+          <h3>Crie um time</h3>
+          <input type="text" placeholder="Goleiro">
+          <br>
+          <input type="text" placeholder="Zagueiro">
+          <br>
+          <input type="text" placeholder="Zagueiro">
+          <br>
+          <input type="text" placeholder="Zagueiro">
+          <br>
+          <input type="text" placeholder="Zagueiro">
+          <br>
+          <input type="text" placeholder="Meio">
+          <br>
+          <input type="text" placeholder="Meio">
+          <br>
+          <input type="text" placeholder="Meio">
+          <br>
+          <input type="text" placeholder="Atacante">
+          <br>
+          <input type="text" placeholder="Atacante">
+          <br>
+          <input type="text" placeholder="Atacante">
+        </div>
+        <div class="btns">
+          <button class="botaofecharcriarTime" onclick="closeModalcriarTime()">Fechar</button>
+          <button class="botaosalvarCriarTime">Salvar time</button>
+        </div>
+      </div>
+    </div>
+    
     <div id="team">     
     </div>
     <div id="reservePlayers">
@@ -48,17 +79,6 @@
   </div>
 
 
-  <div class="modal-container">
-      <div class="modal">
-        <hr>
-        <ul>
-
-        </ul>
-        <div class="btns">
-          <button class="Close" onclick="closeModal()">Fechar</button>
-        </div>
-      </div>
-  </div>
 
 
   <script src="script.js"></script>

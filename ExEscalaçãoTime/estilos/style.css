@@ -107,7 +107,7 @@ body > div#escalacao {
 div#optionsTeam{
   width: 500px;
   display: flex;
-  background: linear-gradient(#3d4551, #323436);
+  background: linear-gradient(#080404, #110d0d);
   padding: 5px;
   margin: 10px 0px 3px ;
   border: 1px solid white;
@@ -131,7 +131,7 @@ body > div > div#team {
   width: 500px;
   height: 346px;
   display: flex;
-  background: url(../estilos/imagens/campo.png), linear-gradient(#3d4551, #323436);
+  background: url(../estilos/imagens/campo.png), linear-gradient(#080404, #080404);
   border: 1px solid white;
   text-align: center;
   border-radius: 2px;
@@ -187,7 +187,7 @@ body > div > div#players {
   width: 400px;
   height: 600px;
   display: flex;
-  background: linear-gradient(#3d4551, #323436) ;
+  background: linear-gradient(#080404, #110d0d) ;
   border: 1px solid white;
   border-radius: 5px;
 }
@@ -197,7 +197,7 @@ body > div > div#players {
   height: 604px;
   display: block;
   margin: -604px 504px 500px ;
-  background: linear-gradient(#3d4551, #323436) ;
+  background: linear-gradient(#080404, #110d0d) ;
   border: 1px solid white;
   text-align: center;
 }
@@ -231,7 +231,7 @@ body > div > div#reservePlayers {
   width: 500px;
   height: 253px;
   margin: 5px 0px 0px 0px;
-  background: linear-gradient(#3d4551, #323436);
+  background: linear-gradient(#080404, #110d0d);
   display: flex;
   border: 1px solid white;
 }

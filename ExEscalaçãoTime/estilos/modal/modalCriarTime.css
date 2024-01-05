@@ -1,0 +1,94 @@
+.modal-containercriarTime{
+  width: 100vw;
+  position: fixed;
+  top: 30px;
+  display: none;
+  z-index: 999;
+  justify-content: center;
+}
+.modalcriarTime{
+  display: block;
+  padding: 30px;
+  margin: 20px 45% 0px 0%;
+  background-color: white;
+  border-radius: 10px;
+  border: 1px solid white;
+  width: 450px;
+  height: 460px;
+  text-align: center;
+  
+}
+.active {
+  display: flex;
+}
+.active .modalcriarTime {
+  animation:  modal .4s;
+}
+@keyframes modalcriarTime {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -60px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+.btns {
+  margin: 15px;
+  display: flex;
+  justify-content: space-evenly;
+  
+}
+.btns >.botaofecharcriarTime{
+  background-color: red;
+  width: 55px;
+  border: 1px solid black;
+  border-radius: 5px;
+  color: white;
+  font-family: 'TituloH3';
+}
+.btns > .botaofecharcriarTime:hover{
+  background-color: rgb(252, 6, 6);
+  width: 60px;
+}
+.btns > .botaosalvarCriarTime{ 
+  background-color: rgb(35, 228, 35);
+  width: 100px;
+  border: 1px solid black;
+  border-radius: 5px;
+  color: white;
+  font-family: 'TituloH3';
+}
+.btns > .botaosalvarCriarTime:hover{
+  background-color: rgb(35, 228, 35);
+  width: 105px;
+}
+.criartimeInputs > input {
+  padding: 2px;
+  border-radius: 15px;
+  margin: 10px 0px 0px 0px;
+  width: 250px;
+  text-align: center;
+  font-family: 'TituloH3';
+}
+.criartimeInputs > input:hover {
+  width: 245px;
+  background-color: rgb(144, 255, 144);
+  
+}
+.criartimeInputs > input::placeholder {
+  font-family: 'TituloH3';
+  color: black;
+}
+.criartimeInputs > h3 {
+  font-family: 'TituloH3';
+  color: black;
+  text-align: center;
+  font-size: 2.0em;
+}
+.criartimeInputs > span{
+ color: black;
+ font-family: 'TituloH3';
+ opacity: 1;
+}

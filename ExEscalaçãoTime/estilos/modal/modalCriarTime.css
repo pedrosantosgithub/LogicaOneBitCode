@@ -8,7 +8,7 @@
 }
 .modalcriarTime{
   display: block;
-  padding: 30px;
+ 
   margin: 20px 45% 0px 0%;
   background-color: white;
   border-radius: 10px;
@@ -80,6 +80,9 @@
 .criartimeInputs > input::placeholder {
   font-family: 'TituloH3';
   color: black;
+}
+.criartimeInputs > input:filled{
+  background-color: red;
 }
 .criartimeInputs > h3 {
   font-family: 'TituloH3';

@@ -13,7 +13,7 @@
     <menu id="options"> 
       <div id="choices">
         <h3>E s c a l e</h3>
-        <a href="#" onclick="criarTime()">Crie um time</a> 
+        <a href="#" onclick="abrircriarTime()">Crie um time</a> 
       </div>
       <div id="pesquisa">
         <input type="search" name="" id="" placeholder="Pesquisa o jogador...">
@@ -26,7 +26,7 @@
   <div id="escalacao">
     <div id="optionsTeam">
       <div class="select-menu">
-          <span class="sBtn-text" onclick="criarTime()">
+          <span class="sBtn-text" onclick="">
             Escolha o time
           </span>
       </div>
@@ -38,31 +38,33 @@
       <div class="modalcriarTime">
         <div class="criartimeInputs">
           <h3>Crie um time</h3>
-          <input type="text" placeholder="Goleiro">
+          <input type="text" id="nomeTime" placeholder="Nome do time">
           <br>
-          <input type="text" placeholder="Zagueiro">
+          <input type="text" id="goleiro" placeholder="Goleiro">
           <br>
-          <input type="text" placeholder="Zagueiro">
+          <input type="text" id="zagueiroum" placeholder="Zagueiro">
           <br>
-          <input type="text" placeholder="Zagueiro">
+          <input type="text" id="zagueirodois" placeholder="Zagueiro">
           <br>
-          <input type="text" placeholder="Zagueiro">
+          <input type="text" id="zagueirotres"placeholder="Zagueiro">
           <br>
-          <input type="text" placeholder="Meio">
+          <input type="text" id="zagueiroquatro" placeholder="Zagueiro">
           <br>
-          <input type="text" placeholder="Meio">
+          <input type="text" id="meioum" placeholder="Meio">
           <br>
-          <input type="text" placeholder="Meio">
+          <input type="text" id="meiodois" placeholder="Meio">
           <br>
-          <input type="text" placeholder="Atacante">
+          <input type="text" id="meiotres" placeholder="Meio">
           <br>
-          <input type="text" placeholder="Atacante">
+          <input type="text" id="atacanteum" placeholder="Atacante">
           <br>
-          <input type="text" placeholder="Atacante">
+          <input type="text" id="atacantedois" placeholder="Atacante">
+          <br>
+          <input type="text" id="atacantetres" placeholder="Atacante">
         </div>
         <div class="btns">
-          <button class="botaofecharcriarTime" onclick="closeModalcriarTime()">Fechar</button>
-          <button class="botaosalvarCriarTime">Salvar time</button>
+          <button class="botaofecharcriarTime"  onclick="closeModalcriarTime()">Fechar</button>
+          <button class="botaosalvarCriarTime" onclick="criarTime()">Salvar time</button>
         </div>
       </div>
     </div>

@@ -8,13 +8,12 @@
 }
 .modalcriarTime{
   display: block;
- 
-  margin: 20px 45% 0px 0%;
+
+  margin: 8% 45% 0px 0%;
   background-color: white;
   border-radius: 10px;
   border: 1px solid white;
-  width: 450px;
-  height: 460px;
+  width: 25%;
   text-align: center;
   
 }
@@ -33,6 +32,10 @@
     opacity: 1;
     transform: translate3d(0, 0, 0);
   }
+}
+.sBtn-text{
+  color: white;
+  font-family: 'TituloH3';
 }
 .btns {
   margin: 15px;

@@ -33,7 +33,7 @@ function criarTime() {
     atacantetres.value
   ];
 
-  console.log(`Time: ${nomeTime}, Jogadores: ${jogadores.join(', ')}`);
+
 }
 
 // ... (restante do seu código)
